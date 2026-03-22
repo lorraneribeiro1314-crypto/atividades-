@@ -1,0 +1,27 @@
+//Escrever um algoritmo para determinar o consumo médio de um automóvel sendo
+fornecida a distância total percorrida pelo automóvel e o total de combustível gasto
+
+
+consumo_medio = distancia_total / total_combustivel_gasto
+
+Algoritmo "ConsumoMedioDeUmAutomovel":
+
+    variável: consumo_medio, distancia_total, total_combustivel_gasto : float:
+
+inicio
+
+  Escreva("Distancia total percorrida:"):
+
+  Leia( distancia_total );
+
+  Escreva("Total de combustível gasto:"):
+
+  Leia( total_combustivel ):
+
+ consumo_medio = distancia_total / total_combustivel_gasto:
+
+ Escreva( consumo_medio ):
+
+ 
+
+fim.

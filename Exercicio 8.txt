@@ -1,0 +1,27 @@
+//Faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando
+“maior de idade” e “menor de idade” e “idoso”para cada pessoa.Considere a idade a
+partir de 18 anos como maior de idade e idoso a partir de 60 anos.
+
+Algoritmo "ClassificarIdades75Pessoas"
+Var
+   idade, i : Inteiro
+
+Inicio
+   // Repetição para receber 75 pessoas
+   Para i de 1 ate 75 faca
+      Escreva("Digite a idade da pessoa ", i, ": ")
+      Leia(idade)
+
+     
+      Se (idade >= 60) entao
+         Escreval("Pessoa ", i, ": Idoso")
+      Senao
+         Se (idade >= 18) entao
+            Escreval("Pessoa ", i, ": Maior de idade")
+         Senao
+            Escreval("Pessoa ", i, ": Menor de idade")
+         FimSe
+      FimSe
+   FimPara
+
+FimAlgoritmo

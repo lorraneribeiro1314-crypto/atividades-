@@ -1,0 +1,48 @@
+//A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com
+desconto. Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser
+pago pelo cliente de vários carros. O desconto deverá ser calculado de acordo com o
+ano do veículo. Até 2010 - 12% e acima de 2010 - 7%. O sistema deverá perguntar se
+deseja continuar calculando desconto até que a resposta digite: “(N) Não” . Informar
+total de carros com ano até 2010 e total geral.
+
+Algoritmo < desconto e valor pago >
+Var
+
+Inicio
+
+cadeia desejaContinuar = "S"
+inteiro anoVeiculo
+real valorVeiculo, valorDesconto, valorFinal
+inteiro totalAte2010 = 0
+inteiro totalGeral = 0
+
+enquanto (desejaContinuar == "S" ou desejaContinuar == "s") {
+escreva("Digite o valor do veículo: ")
+leia(valorVeiculo)
+escreva("Digite o ano do veículo: ")
+leia(anoVeiculo)
+
+// Lógica do desconto
+se (anoVeiculo <= 2010) {
+	valorDesconto = valorVeiculo * 0.12
+	totalAte2010 = totalAte2010 + 1
+	} senao {
+		 valorDesconto = valorVeiculo * 0.07
+			}
+
+valorFinal = valorVeiculo - valorDesconto
+totalGeral = totalGeral + 1
+
+// Exibição dos resultados parciais
+escreva("Valor do desconto: R$ ", valorDesconto, "\n")
+
+// Pergunta para controle do laço 
+escreva("Deseja continuar calculando? (S/N): ")
+leia(desejaContinuar)
+limpa()
+		
+// Resultados finais
+escreva("Resumo das vendas:\n")
+escreva("Total de carros com ano até 2010: ", totalAte2010, "\n")
+escreva("Total geral de carros processados: ", totalGeral, "\n")
+		

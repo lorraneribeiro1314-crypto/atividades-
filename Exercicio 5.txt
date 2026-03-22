@@ -1,0 +1,24 @@
+// O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos 
+(aplicados, primeiro os impostos sobre o custo de fábrica, e depois a percentagem do distribuidor sobre o resultado). 
+//Supondo que a percentagem do distribuidor seja de 28% e os impostos 45%. 
+//Escrever um algoritmo que leia o custo de fábrica de um carro e informe o custo ao consumidor do mesmo.
+
+
+Algorismo <Calculoa_Custo_Carro>
+
+Van
+custo_fabrica, custo_com_impostos, custo_final : real
+
+Inicio
+ 
+Escreva ("Digite o custo de fábrica do veiculo:")
+Leia ( "Custo d fábrica")
+    // 1. Aplica os impostos (45%) sobre o custo de fábrica
+   custo_com_impostos <- custo_fabrica * 1.45
+
+   // 2. Aplica a porcentagem do distribuidor (28%) sobre o valor anterior
+   custo_final <- custo_com_impostos * 1.28
+
+ Escreva ("O custo final ao consumidor é: R$ ", custo_final:2:2)
+
+fimAlgoritmo
